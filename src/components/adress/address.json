@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_adress_addresses",
+  "info": {
+    "displayName": "adress",
+    "icon": "vector-square",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "country": {
+      "type": "string"
+    },
+    "street": {
+      "type": "string",
+      "required": true
+    },
+    "houseNr": {
+      "type": "string",
+      "unique": false,
+      "required": true
+    },
+    "city": {
+      "type": "text",
+      "required": true
+    },
+    "zip": {
+      "type": "integer"
+    },
+    "location": {
+      "type": "component",
+      "repeatable": true,
+      "component": "adress.coordinate"
+    }
+  }
+}

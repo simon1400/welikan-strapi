@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_layout_footer_columns",
+  "info": {
+    "displayName": "footerColumn",
+    "icon": "briefcase",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "header": {
+      "type": "string"
+    },
+    "footerLinks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::menu.menu"
+    }
+  }
+}

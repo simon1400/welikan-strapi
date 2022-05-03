@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "promotions",
+  "info": {
+    "singularName": "promotion",
+    "pluralName": "promotions",
+    "displayName": "promotion",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "text",
+      "required": true
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "from": {
+      "type": "datetime",
+      "required": true
+    },
+    "to": {
+      "type": "datetime",
+      "required": true
+    },
+    "tag": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "institution": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::institution.institution",
+      "inversedBy": "promotions"
+    }
+  }
+}

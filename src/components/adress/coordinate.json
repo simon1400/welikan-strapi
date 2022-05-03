@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_map_coordinates",
+  "info": {
+    "displayName": "coordinate",
+    "icon": "wrench",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "latitude": {
+      "type": "float"
+    },
+    "longitude": {
+      "type": "float"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_link_navlinks",
+  "info": {
+    "displayName": "navlink",
+    "icon": "at",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "link": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "iconSrc": {
+      "type": "string"
+    }
+  }
+}

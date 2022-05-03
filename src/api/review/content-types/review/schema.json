@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reviews",
+  "info": {
+    "singularName": "review",
+    "pluralName": "reviews",
+    "displayName": "review"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "userName": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "enumeration",
+      "enum": [
+        "'1'",
+        "'2'",
+        "'3'",
+        "'4'",
+        "'5'",
+        "'6'",
+        "'7'",
+        "'8'",
+        "'9'",
+        "'10'"
+      ],
+      "required": true
+    },
+    "doctor": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::doctor.doctor",
+      "inversedBy": "reviews"
+    },
+    "institution": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::institution.institution",
+      "inversedBy": "reviews"
+    }
+  }
+}
