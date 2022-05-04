@@ -27,7 +27,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::doctor.doctor",
-      "inversedBy": "specialisations"
+      "mappedBy": "specialisations"
     },
     "institutions": {
       "type": "relation",

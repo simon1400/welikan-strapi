@@ -58,6 +58,10 @@
       "relation": "oneToMany",
       "target": "api::review.review",
       "mappedBy": "doctor"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
     }
   }
 }

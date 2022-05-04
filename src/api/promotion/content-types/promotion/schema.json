@@ -31,17 +31,22 @@
       "type": "string"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "institution": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::institution.institution",
       "inversedBy": "promotions"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
     }
   }
 }

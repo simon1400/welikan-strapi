@@ -4,7 +4,8 @@
   "info": {
     "singularName": "review",
     "pluralName": "reviews",
-    "displayName": "review"
+    "displayName": "review",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,21 +20,21 @@
       "type": "string"
     },
     "description": {
-      "type": "string"
+      "type": "text"
     },
     "rating": {
       "type": "enumeration",
       "enum": [
-        "'1'",
-        "'2'",
-        "'3'",
-        "'4'",
-        "'5'",
-        "'6'",
-        "'7'",
-        "'8'",
-        "'9'",
-        "'10'"
+        "one",
+        "two",
+        "three",
+        "four",
+        "five",
+        "six",
+        "seven",
+        "eight",
+        "nine",
+        "ten"
       ],
       "required": true
     },
