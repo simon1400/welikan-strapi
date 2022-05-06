@@ -4,29 +4,50 @@
   "info": {
     "singularName": "service",
     "pluralName": "services",
-    "displayName": "service"
+    "displayName": "Услуги",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "title": {
       "type": "string",
-      "unique": false,
-      "required": true
-    },
-    "description": {
-      "type": "text"
+      "unique": true,
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "price": {
-      "type": "decimal"
+      "type": "decimal",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "institution": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::institution.institution",
       "inversedBy": "services"
+    },
+    "content": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "richtext",
+      "required": false
     }
   }
 }

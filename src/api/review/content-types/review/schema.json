@@ -4,7 +4,7 @@
   "info": {
     "singularName": "review",
     "pluralName": "reviews",
-    "displayName": "review",
+    "displayName": "Отзывы",
     "description": ""
   },
   "options": {
@@ -19,7 +19,7 @@
     "title": {
       "type": "string"
     },
-    "description": {
+    "content": {
       "type": "text"
     },
     "rating": {

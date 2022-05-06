@@ -4,24 +4,35 @@
   "info": {
     "singularName": "specialisation",
     "pluralName": "specialisations",
-    "displayName": "specialisation"
+    "displayName": "Специальности",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
-    "name": {
+    "title": {
       "type": "string",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "unique": true
     },
-    "value": {
-      "type": "string",
-      "unique": true,
-      "required": true
-    },
-    "description": {
-      "type": "richtext"
+    "content": {
+      "type": "richtext",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "doctors": {
       "type": "relation",

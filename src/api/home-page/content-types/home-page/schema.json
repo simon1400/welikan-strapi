@@ -4,16 +4,26 @@
   "info": {
     "singularName": "home-page",
     "pluralName": "home-pages",
-    "displayName": "homePage",
+    "displayName": "Главная страница",
     "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
-    "header": {
-      "type": "string"
+    "title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
     },
     "institutions": {
       "type": "relation",

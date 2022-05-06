@@ -4,25 +4,47 @@
   "info": {
     "singularName": "institution",
     "pluralName": "institutions",
-    "displayName": "Institution",
+    "displayName": "Организации",
     "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "title": {
       "type": "string",
+      "required": true,
+      "unique": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "content": {
+      "type": "richtext",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
       "required": true
     },
-    "description": {
-      "type": "richtext"
-    },
-    "adress": {
+    "address": {
       "type": "component",
       "repeatable": true,
-      "component": "adress.address"
+      "component": "adress.address",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
     },
     "type": {
       "type": "enumeration",
@@ -32,12 +54,22 @@
         "other"
       ],
       "default": "Hospital",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "contact": {
       "type": "component",
       "repeatable": false,
-      "component": "adress.contact"
+      "component": "adress.contact",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "doctors": {
       "type": "relation",
@@ -63,13 +95,18 @@
       "target": "api::service.service",
       "mappedBy": "institution"
     },
-    "photos": {
+    "images": {
       "type": "media",
       "multiple": true,
       "required": false,
       "allowedTypes": [
         "images"
-      ]
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "licences": {
       "type": "media",
@@ -77,7 +114,12 @@
       "required": false,
       "allowedTypes": [
         "images"
-      ]
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "reviews": {
       "type": "relation",
@@ -87,7 +129,8 @@
     },
     "slug": {
       "type": "uid",
-      "targetField": "title"
+      "targetField": "title",
+      "required": true
     }
   }
 }
