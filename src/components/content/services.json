@@ -2,14 +2,15 @@
   "collectionName": "components_content_services",
   "info": {
     "displayName": "services",
-    "icon": "address-book"
+    "icon": "address-book",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "title": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "price": {
       "type": "string",

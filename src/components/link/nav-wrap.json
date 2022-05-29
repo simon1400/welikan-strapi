@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_link_nav_wraps",
+  "info": {
+    "displayName": "navWrap",
+    "icon": "archway"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "item": {
+      "type": "component",
+      "repeatable": true,
+      "component": "link.navlink"
+    }
+  }
+}

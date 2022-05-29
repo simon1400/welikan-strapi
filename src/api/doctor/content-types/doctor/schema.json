@@ -26,16 +26,6 @@
         }
       }
     },
-    "personalId": {
-      "type": "string",
-      "unique": true,
-      "required": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
     "image": {
       "type": "media",
       "multiple": false,
@@ -121,11 +111,12 @@
       "required": true
     },
     "galery": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
       ],
-      "type": "media",
-      "multiple": true,
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -133,11 +124,12 @@
       }
     },
     "licence": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
       ],
-      "type": "media",
-      "multiple": true,
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -162,7 +154,7 @@
           "localized": true
         }
       },
-      "type": "integer",
+      "type": "decimal",
       "required": true
     }
   }

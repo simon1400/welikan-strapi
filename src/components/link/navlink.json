@@ -7,16 +7,16 @@
   },
   "options": {},
   "attributes": {
-    "label": {
+    "title": {
       "type": "string",
       "required": true,
       "unique": false
     },
-    "link": {
+    "url": {
       "type": "string",
       "required": true
     },
-    "iconLink": {
+    "icon": {
       "type": "string"
     }
   }

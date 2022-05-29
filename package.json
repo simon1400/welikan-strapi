@@ -22,7 +22,6 @@
     "strapi-plugin-graphs-builder": "^1.0.0",
     "strapi-plugin-local-image-sharp": "^1.0.2",
     "strapi-plugin-meilisearch": "^0.6.3",
-    "strapi-plugin-menus": "^0.3.0",
     "strapi-plugin-placeholder": "^4.1.7",
     "strapi-plugin-sitemap": "^2.0.7",
     "strapi-tiptap-editor": "^0.7.10"
