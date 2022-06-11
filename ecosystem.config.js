@@ -19,7 +19,7 @@ module.exports = {
       ref  : 'origin/main',
       repo : 'git@github.com:simon1400/welikan-strapi.git',
       path : '/var/www/strapi',
-      'post-deploy' : 'npm i && npm run build && pm2 reload ecosystem.config.js --env production',
+      'post-deploy' : 'yarn && yarn build && pm2 reload ecosystem.config.js --env production',
     }
   }
 };
