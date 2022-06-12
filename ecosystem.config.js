@@ -15,11 +15,11 @@ module.exports = {
   deploy : {
     production : {
       user : 'dimi',
-      host : ['51.250.50.70'],
+      host : ['51.250.18.9'],
       ref  : 'origin/main',
       repo : 'git@github.com:simon1400/welikan-strapi.git',
-      path : '/var/www/strapi',
-      'post-deploy' : 'yarn && yarn build && pm2 reload ecosystem.config.js --env production',
+      path : '/var/app/strapi',
+      'post-deploy' : 'npm i && npm run build && pm2 reload ecosystem.config.js --env production',
     }
   }
 };
