@@ -45,6 +45,16 @@
       "relation": "manyToMany",
       "target": "api::institution.institution",
       "mappedBy": "specialisations"
+    },
+    "slug": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "uid",
+      "targetField": "title",
+      "required": true
     }
   }
 }
