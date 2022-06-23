@@ -88,7 +88,7 @@
         }
       },
       "type": "richtext",
-      "required": true
+      "required": false
     },
     "experience": {
       "pluginOptions": {
@@ -135,7 +135,7 @@
         }
       },
       "component": "content.services",
-      "required": true
+      "required": false
     },
     "score": {
       "pluginOptions": {
@@ -144,7 +144,8 @@
         }
       },
       "type": "decimal",
-      "required": true
+      "required": true,
+      "default": 0
     },
     "address": {
       "pluginOptions": {
@@ -153,6 +154,11 @@
         }
       },
       "type": "string"
+    },
+    "labels": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::label.label"
     }
   }
 }

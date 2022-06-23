@@ -4,7 +4,8 @@
   "info": {
     "singularName": "label",
     "pluralName": "labels",
-    "displayName": "Метки"
+    "displayName": "Метки",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -24,6 +25,16 @@
       "type": "string",
       "required": true,
       "unique": true
+    },
+    "slug": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "uid",
+      "targetField": "title",
+      "required": true
     }
   }
 }

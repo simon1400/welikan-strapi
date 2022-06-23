@@ -1675,6 +1675,146 @@
       "type": "string",
       "default": "Добавить аукцион",
       "required": true
+    },
+    "district": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "Район",
+      "required": true
+    },
+    "buyerContract": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "Условия договора покупателя",
+      "required": true
+    },
+    "contractOffering": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "Условия договора предлагающего",
+      "required": true
+    },
+    "privacyPolicy": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "Политика конфиденциальности",
+      "required": true
+    },
+    "saved": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "Сохраненные",
+      "required": true
+    },
+    "orderCreated": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "Заказ создан",
+      "required": true
+    },
+    "promoTerms": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true,
+      "default": "Условия акции"
+    },
+    "foundInstitutions": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "Найдено 555 учреждений по вашему запросу",
+      "required": true
+    },
+    "whatNeedDone": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "Что нужно выполнить",
+      "required": true
+    },
+    "whatCity": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "В каком городе?",
+      "required": true
+    },
+    "desiredCost": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "Желаемая стоимость, до",
+      "required": true
+    },
+    "suggestionsParticipants": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "Предложения от участников",
+      "required": true
+    },
+    "accept": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "принять",
+      "required": true
+    },
+    "reject": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "отклонить",
+      "required": true
     }
   }
 }
