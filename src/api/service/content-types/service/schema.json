@@ -34,12 +34,6 @@
         }
       }
     },
-    "institution": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::institution.institution",
-      "inversedBy": "services"
-    },
     "content": {
       "pluginOptions": {
         "i18n": {

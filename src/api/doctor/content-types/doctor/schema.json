@@ -49,12 +49,6 @@
         }
       }
     },
-    "institutions": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::institution.institution",
-      "inversedBy": "doctors"
-    },
     "specialisations": {
       "type": "relation",
       "relation": "manyToMany",
@@ -159,6 +153,12 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::label.label"
+    },
+    "institutions": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::institution.institution",
+      "inversedBy": "doctors"
     }
   }
 }

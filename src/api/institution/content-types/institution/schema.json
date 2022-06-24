@@ -33,18 +33,7 @@
           "localized": true
         }
       },
-      "required": true
-    },
-    "address": {
-      "type": "component",
-      "repeatable": true,
-      "component": "adress.address",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "required": true
+      "required": false
     },
     "type": {
       "type": "enumeration",
@@ -53,7 +42,7 @@
         "Laboratory",
         "other"
       ],
-      "default": "Hospital",
+      "default": "other",
       "required": true,
       "pluginOptions": {
         "i18n": {
@@ -87,12 +76,6 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::promotion.promotion",
-      "mappedBy": "institution"
-    },
-    "services": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::service.service",
       "mappedBy": "institution"
     },
     "images": {
@@ -131,6 +114,59 @@
       "type": "uid",
       "targetField": "title",
       "required": true
+    },
+    "address": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "open": {
+      "displayName": "open",
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "content.open"
+    },
+    "services": {
+      "displayName": "service",
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "content.service"
+    },
+    "specialistIn": {
+      "displayName": "specialist",
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "content.specialist"
+    },
+    "logo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }
