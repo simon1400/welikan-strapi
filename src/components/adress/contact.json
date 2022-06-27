@@ -7,11 +7,11 @@
   },
   "options": {},
   "attributes": {
-    "phone": {
-      "type": "biginteger"
-    },
     "email": {
       "type": "email"
+    },
+    "phone": {
+      "type": "string"
     }
   }
 }
