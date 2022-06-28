@@ -16,27 +16,8 @@
       "type": "string",
       "required": true
     },
-    "title": {
-      "type": "string"
-    },
     "content": {
       "type": "text"
-    },
-    "rating": {
-      "type": "enumeration",
-      "enum": [
-        "one",
-        "two",
-        "three",
-        "four",
-        "five",
-        "six",
-        "seven",
-        "eight",
-        "nine",
-        "ten"
-      ],
-      "required": true
     },
     "doctor": {
       "type": "relation",
@@ -49,6 +30,10 @@
       "relation": "manyToOne",
       "target": "api::institution.institution",
       "inversedBy": "reviews"
+    },
+    "rating": {
+      "type": "decimal",
+      "required": true
     }
   }
 }
