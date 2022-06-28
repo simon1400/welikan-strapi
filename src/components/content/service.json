@@ -2,17 +2,18 @@
   "collectionName": "components_content_services",
   "info": {
     "displayName": "service",
-    "icon": "ankh"
+    "icon": "ankh",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "title": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "price": {
       "type": "string",
-      "required": true
+      "required": false
     }
   }
 }

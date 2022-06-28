@@ -43,7 +43,7 @@
         "other"
       ],
       "default": "other",
-      "required": true,
+      "required": false,
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -113,7 +113,7 @@
     "slug": {
       "type": "uid",
       "targetField": "title",
-      "required": true
+      "required": false
     },
     "address": {
       "pluginOptions": {
@@ -144,17 +144,6 @@
         }
       },
       "component": "content.service"
-    },
-    "specialistIn": {
-      "displayName": "specialist",
-      "type": "component",
-      "repeatable": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "content.specialist"
     },
     "logo": {
       "type": "media",
