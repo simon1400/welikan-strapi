@@ -159,6 +159,16 @@
       "relation": "manyToMany",
       "target": "api::institution.institution",
       "inversedBy": "doctors"
+    },
+    "meta": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "content.meta"
     }
   }
 }

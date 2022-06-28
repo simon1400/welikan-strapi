@@ -80,6 +80,16 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::label.label"
+    },
+    "meta": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "content.meta"
     }
   }
 }
