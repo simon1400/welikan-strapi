@@ -3,7 +3,5 @@ module.exports = ({ env }) => ({
   port: env.int('PORT', 1341),
   app: {
     keys: env.array('APP_KEYS'),
-  },
-  cron: { enabled: true },
-  cors: { enabled: true, origin: ['*'] },
+  }
 });
