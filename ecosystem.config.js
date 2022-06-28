@@ -1,7 +1,7 @@
 module.exports = {
   apps : [{
     name   : "Welikan strapi",
-    script : "npm start",
+    script : "npm run dev",
     env_production: {
       HOST:"0.0.0.0",
       PORT:1341,
