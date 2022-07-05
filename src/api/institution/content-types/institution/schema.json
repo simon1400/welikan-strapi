@@ -156,6 +156,12 @@
       "relation": "manyToMany",
       "target": "api::service.service",
       "mappedBy": "organizations"
+    },
+    "specialisations": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::specialisation.specialisation",
+      "inversedBy": "organizations"
     }
   }
 }
