@@ -54,7 +54,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::institution.institution",
-      "inversedBy": "specialisations"
+      "mappedBy": "specialisations"
     }
   }
 }
