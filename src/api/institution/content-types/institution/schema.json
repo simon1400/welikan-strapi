@@ -66,12 +66,6 @@
       "target": "api::doctor.doctor",
       "mappedBy": "institutions"
     },
-    "specialisations": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::specialisation.specialisation",
-      "inversedBy": "institutions"
-    },
     "promotions": {
       "type": "relation",
       "relation": "oneToMany",

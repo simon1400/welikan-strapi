@@ -40,12 +40,6 @@
       "target": "api::doctor.doctor",
       "mappedBy": "specialisations"
     },
-    "institutions": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::institution.institution",
-      "mappedBy": "specialisations"
-    },
     "slug": {
       "pluginOptions": {
         "i18n": {
