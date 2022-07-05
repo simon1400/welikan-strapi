@@ -128,17 +128,6 @@
       },
       "component": "content.open"
     },
-    "services": {
-      "displayName": "service",
-      "type": "component",
-      "repeatable": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "content.service"
-    },
     "logo": {
       "type": "media",
       "multiple": false,
@@ -161,6 +150,12 @@
         }
       },
       "component": "content.meta"
+    },
+    "services": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::service.service",
+      "mappedBy": "organizations"
     }
   }
 }
