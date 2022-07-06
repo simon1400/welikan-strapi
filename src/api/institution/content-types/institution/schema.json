@@ -162,6 +162,15 @@
       "relation": "manyToMany",
       "target": "api::specialisation.specialisation",
       "inversedBy": "organizations"
+    },
+    "rating": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "decimal",
+      "default": 0
     }
   }
 }
