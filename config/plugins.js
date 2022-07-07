@@ -18,7 +18,7 @@ module.exports = {
             phone: entry?.contact?.phone,
             slug: entry?.slug,
             type: entry?.type,
-            rating: entry?.rating,
+            rating: entry?.rating || 0,
             address: entry?.address,
             specialisations: entry.specialisations.map(specialisation => specialisation?.title),
             city: entry?.address.split(',')[0].split('г.')[1]
