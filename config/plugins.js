@@ -6,7 +6,7 @@ module.exports = {
       institution: {
         transformEntry({ entry }) {
           const data = {
-            ...entry,
+            id: entry.id,
             title: entry?.title,
             logo: entry?.logo,
             content: entry?.content,
