@@ -4,8 +4,8 @@ module.exports = {
   meilisearch: {
     config: {
       institution: {
-        transformEntry({ entry }) { // can also be async
-          return {
+        transformEntry({ entry }) {
+          const data = {
             title: entry?.title,
             logo: entry?.logo,
             content: entry?.content,
@@ -15,6 +15,8 @@ module.exports = {
             address: entry?.address,
             specialisations: entry.specialisations.map(specialisation => specialisation?.title)
           }
+          console.log(data);
+          return data
         },
       }
     }
