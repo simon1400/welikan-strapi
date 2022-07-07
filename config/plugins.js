@@ -5,7 +5,8 @@ module.exports = {
     config: {
       institution: {
         settings: {
-          filterableAttributes: ['city'],
+          filterableAttributes: ['city', 'type'],
+          searchableAttributes: ['title', 'specialisations', 'slug'],
         },
         transformEntry({ entry }) {
           const data = {
