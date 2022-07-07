@@ -5,7 +5,8 @@ module.exports = {
     config: {
       institution: {
         settings: {
-          filterableAttributes: ['city', 'type'],
+          filterableAttributes: ['city', 'type', 'rating'],
+          // sortableAttributes: [''],
           searchableAttributes: ['title', 'specialisations', 'slug'],
         },
         transformEntry({ entry }) {
@@ -17,6 +18,7 @@ module.exports = {
             phone: entry?.contact?.phone,
             slug: entry?.slug,
             type: entry?.type,
+            rating: entry?.rating,
             address: entry?.address,
             specialisations: entry.specialisations.map(specialisation => specialisation?.title),
             city: entry?.address.split(',')[0].split('г.')[1]
