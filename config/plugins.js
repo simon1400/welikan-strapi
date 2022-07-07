@@ -14,7 +14,8 @@ module.exports = {
             slug: entry?.slug,
             type: entry?.type,
             address: entry?.address,
-            specialisations: entry.specialisations.map(specialisation => specialisation?.title)
+            specialisations: entry.specialisations.map(specialisation => specialisation?.title),
+            city: entry?.address.split(',')[0].split('г.')[1]
           }
           return data
         },
