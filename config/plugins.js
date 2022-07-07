@@ -6,6 +6,7 @@ module.exports = {
       institution: {
         transformEntry({ entry }) {
           const data = {
+            ...entry,
             title: entry?.title,
             logo: entry?.logo,
             content: entry?.content,
@@ -15,7 +16,6 @@ module.exports = {
             address: entry?.address,
             specialisations: entry.specialisations.map(specialisation => specialisation?.title)
           }
-          console.log(data);
           return data
         },
       }
