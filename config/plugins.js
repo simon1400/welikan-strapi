@@ -4,6 +4,9 @@ module.exports = {
   meilisearch: {
     config: {
       institution: {
+        settings: {
+          filterableAttributes: ['city'],
+        },
         transformEntry({ entry }) {
           const data = {
             id: entry.id,
